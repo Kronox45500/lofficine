@@ -1,0 +1,13 @@
+L'Officine des Simples - fichiers sources
+
+officine.html (dans le dossier parent) : le jeu complet, à ouvrir directement dans un navigateur.
+
+Sources :
+- head.html, style.css, body.html : structure et styles de la page
+- data.js   : ingrédients, effets, types, techniques
+- engine.js : moteur de calcul des préparations et des mixtures
+- art.js    : illustrations (bocaux, outils, sceaux, flacons)
+- ui.js     : interface, étagère, établi, fiches, grimoire, réserve
+- build.sh  : assemble le tout en officine.html (à lancer avec : bash build.sh, nécessite node)
+- test.js, test2.js, fuzz.js : tests du moteur, à lancer ainsi :
+    cat data.js engine.js test2.js > /tmp/t.js && node /tmp/t.js

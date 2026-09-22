@@ -1,0 +1,22 @@
+</style>
+</head>
+<body>
+<div class="app" id="app" data-view="bench">
+  <header class="top">
+    <div class="brand"><span id="brand-logo"></span><h1>L'Officine des Simples</h1></div>
+    <nav class="nav" id="nav" aria-label="Sections"><button data-a="view" data-v="bench">Établi</button><button data-a="view" data-v="book">Grimoire<span class="count" id="navcount" style="display:none"></span></button></nav>
+    <button class="iconbtn" data-a="theme" aria-label="Changer de thème"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.500 1.500M17.500 17.500L19 19M5 19l1.500-1.500M17.500 6.500L19 5"/></svg></button>
+    <button class="iconbtn" data-a="help" aria-label="Comment jouer">?</button>
+  </header>
+  <main class="stage">
+    <section class="panel panel-shelf" id="shelf" aria-label="Étagère"></section>
+    <section class="panel panel-bench" id="bench" aria-label="Établi"></section>
+    <section class="panel panel-result" id="result" aria-label="Fiche de la préparation"></section>
+    <section class="panel panel-book" id="book" aria-label="Grimoire"></section>
+  </main>
+  <nav class="dock" id="dock" aria-label="Sections"></nav>
+</div>
+<dialog id="dlg" aria-label="Fenêtre"></dialog>
+<div class="toast" id="toast" role="status"></div>
+<div class="sr" id="live" aria-live="polite"></div>
+<script>
